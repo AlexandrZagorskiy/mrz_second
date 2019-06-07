@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант 6</title>
+    <script src="algo.js"></script>
+</head>
+<body>
+        <b>Размерности матриц:</b><br>
+        p = <input id="p"><br>
+        m = <input id="m"><br>
+        q = <input id="q"><br><br>
+
+        <b>Количество процессорных элементов:</b><br>
+        n = <input id="n"><br><br>
+
+        <b>Время выполнения операций:</b><br>
+        Сравнение <input type="text" id="comp"><br>
+        Сложение <input type="text" id="add"><br>
+        Разность <input type="text" id="sub"><br>
+        Умножение <input type="text" id="mult"><br>
+        Деление <input type="text" id="div"><br>
+
+        <button type="button" onclick="matrix();" id="start">Рассчитать</button>
+
+        <script>
+			document.getElementById("p" || "m" || "q" || "comp" || "add" || "sub" || "mult" || "div").onkeypress= function(event) 
+			{
+				event = event || window.event;
+ 				if (event.charCode && (event.charCode < 48 || event.charCode > 57))// проверка на event.charCode - чтобы пользователь мог нажать backspace, enter, стрелочку назад...
+					return false;
+			};
+		</script>
+
+<p> </p>
+
+<div id="resultA"></div>
+<table id="matrixA" border=1></table>
+
+<div id="resultB"></div>
+<table id="matrixB" border=1></table>
+
+<div id="resultE"></div>
+<table id="matrixE" border=1></table>
+
+<div id="resultG"></div>
+<table id="matrixG" border=1></table>
+
+<div id="resultD"></div>
+<table id="matrixD" border=1></table>
+
+<div id="resultF"></div>
+<table id="matrixF" border=1></table>
+
+<div id="resultC"></div>
+<table id="matrixC" border=1></table>
+
+<div id="t1"></div>
+<div id="tn"></div>
+<div id="r"></div>
+<div id="ky"></div>
+<div id="e0"></div>
+<div id="d0"></div>
+</body>
+</html>
